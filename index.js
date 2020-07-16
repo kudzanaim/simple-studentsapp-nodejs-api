@@ -1,6 +1,10 @@
 const express = require('express');
 const firebase = require('firebase');
+const cors = require('cors');
 const app = express();
+
+// Set Cors:
+app.use(cors())
 
 // DB Configs:
 const config = {
